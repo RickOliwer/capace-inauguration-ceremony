@@ -27,25 +27,6 @@
             "mime_types": ""
         },
         {
-            "key": "field_612dd1b98b5a1",
-            "label": "First Box Lable",
-            "name": "first_box_lable",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
             "key": "field_612dd93315547",
             "label": "First Box Lables",
             "name": "first_box_lables",
@@ -141,5 +122,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1630395060
+    "modified": 1630396558
 }

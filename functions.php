@@ -1,5 +1,8 @@
 <?php
 
+require_once('inc/front-page-content.php');
+require get_template_directory() . '/inc/acf-loader.php';
+
 /**
  * setup theme.-white
  *

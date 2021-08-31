@@ -5,8 +5,11 @@
             <?php the_post(); ?>
 
 
-            <?php the_title('<h1>', '</h1>'); ?>
+
             <div class="the-content-paragraph">
+                <?php capace_first_box(); ?>
+
+                <?php the_title('<h1>', '</h1>'); ?>
                 <?php the_content(); ?>
             </div>
 
