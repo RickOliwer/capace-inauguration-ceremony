@@ -4,6 +4,7 @@
 * {
   margin: 0;
   padding: 0;
+  overflow-x: none;
 }
 
 .navbar {
@@ -102,4 +103,29 @@
   font-size: 24px;
   text-transform: uppercase;
   color: #fff;
+}
+
+.front-container .main_content {
+  margin: auto;
+  margin: 50px 30px 50px 30px;
+}
+.front-container .main_content .front-page-header {
+  color: #333;
+  font-family: "Poppins", sans-serif;
+  text-transform: lowercase;
+  font-weight: bold;
+  font-size: 1.8em;
+  line-height: 1.9em;
+  margin-bottom: 50px;
+}
+.front-container .main_content .front-page-header span {
+  color: #FF752E;
+  font-family: "Caveat", cursive;
+  font-size: 1.8em;
+}
+.front-container .main_content p {
+  color: #333;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 20px;
 }

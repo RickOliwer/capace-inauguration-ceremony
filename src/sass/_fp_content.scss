@@ -1,0 +1,31 @@
+.front-container{
+    .main_content{
+        margin: auto;
+        margin: 50px 30px 50px 30px;
+
+        .front-page-header{
+            color: #333;
+            font-family: 'Poppins', sans-serif;
+            text-transform: lowercase;
+            font-weight: bold;
+            font-size: 1.8em;
+            line-height: 1.9em;
+            margin-bottom: 50px;
+    
+            span{
+                color: #FF752E;
+                font-family: 'Caveat', cursive;
+                font-size: 1.8em;
+                
+            }
+            
+        }
+
+        p{
+            color: #333;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+    }
+}

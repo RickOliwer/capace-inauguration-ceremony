@@ -6,11 +6,17 @@
 
 
 
-            <div class="the-content-paragraph">
+            <div class="front-container">
                 <?php capace_first_box(); ?>
 
-                <?php the_title('<h1>', '</h1>'); ?>
-                <?php the_content(); ?>
+                <div class="main_content">
+                    <?php capace_content_header(); ?>
+                    <?php the_content(); ?>
+                    
+                </div>
+                <div class="second-box">
+                <?php capace_second_box(); ?>
+                </div>
             </div>
 
             <?php endwhile ; ?>

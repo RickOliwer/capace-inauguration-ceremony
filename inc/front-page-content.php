@@ -50,3 +50,47 @@ if(!function_exists('capace_first_box')){
         <?php
     }
 }
+
+if(!function_exists('capace_content_header')){
+    function capace_content_header(){
+
+        if(!function_exists('get_field')){
+            return;
+        }
+
+        if( have_rows('header')){
+            
+            while(have_rows('header')){
+                the_row();
+                
+                $headerTextPoppins = get_sub_field('header_text_poppins');
+                $headerTextCaveatOrange = get_sub_field('header_text_caveat_orange');
+                printf('
+                    <h1 class="front-page-header">%s <span>%s</span></h1>',
+                    $headerTextPoppins,
+                    $headerTextCaveatOrange,
+                );
+            }
+        }
+    }
+}
+
+if(!function_exists('capace_second_box')){
+    function capace_second_box(){
+        if(!function_exists('get_field')){
+            return;
+        }
+
+        $secondBoxVideo = get_field('mp4_video');
+        if(!$secondBoxVideo){
+            return;
+        }
+
+        ?>
+            <video width="100%" margin="auto"  autoplay loop muted>
+                <source src="<?= $secondBoxVideo['url']; ?>" type="video/mp4">
+            </video>
+
+        <?php
+    }
+}
