@@ -1,5 +1,13 @@
-$('.front-page-header').html(function(index, curHTML) {
-    var text = curHTML.split(/[\s-]/),
-        newtext = '<span class="some">' + text.pop() + '</span>';
-    return text.join(' ').concat(' ' + newtext);
-  });
+let ball        = document.querySelector('.ball'),
+    info        = document.querySelector('.info'),
+    y           = 1,
+    gravity     = 1;
+
+setInterval(function(){
+    if(y > 100) gravity = -gravity;
+    gravity += 1;
+    y += gravity;
+    ball.style.transform = `translateY(${y}px)`;
+    info.innerText = "Y : "+y+", G : "+ gravity;
+
+},50); 

@@ -31,7 +31,7 @@ function capace_scripts() {
     // Google fonts
     wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Jost:wght@400;500;600;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap', [], null);
 
-    //wp_enqueue_script( 'capace-script', get_template_directory_uri() . '/js/theme.js', array(), '20151215', true);
+    wp_enqueue_script( 'capace-script', get_template_directory_uri() . '/js/theme.js', array(), '20151215', true);
 
 
 }

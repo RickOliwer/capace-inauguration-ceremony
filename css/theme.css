@@ -216,3 +216,37 @@ h1, h2, h3, h4, h5, h6, p {
   font-style: italic;
   color: #e9e8e8;
 }
+
+@-webkit-keyframes animate {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(-20%);
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(-20%);
+  }
+}
+@-webkit-keyframes animateTwo {
+  0% {
+    transform: translateX(-20%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@keyframes animateTwo {
+  0% {
+    transform: translateX(-20%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
