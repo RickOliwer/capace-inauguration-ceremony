@@ -12,18 +12,20 @@
                 <div class="main_content">
                     <?php capace_content_header(); ?>
                     <?php the_content(); ?>
-                    
                 </div>
+                
                 <div class="second-box">
-                <?php capace_second_box(); ?>
+                    <?php capace_second_box(); ?>
+                </div>
+
+                <div class="third-box">
+                    <?php capace_third_box(); ?>
                 </div>
             </div>
 
             <?php endwhile ; ?>
 
     <?php endif ; ?>
-        <!-- Comments -->
-    <?php comments_template(); ?>
 
 </main><!-- #main -->
 

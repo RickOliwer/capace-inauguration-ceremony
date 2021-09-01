@@ -1,7 +1,7 @@
 .front-container{
     .main_content{
         margin: auto;
-        margin: 50px 30px 50px 30px;
+        margin: $mobilBoxSize;
 
         .front-page-header{
             color: #333;
@@ -13,7 +13,7 @@
             margin-bottom: 50px;
     
             span{
-                color: #FF752E;
+                color: $oranges;
                 font-family: 'Caveat', cursive;
                 font-size: 1.8em;
                 

@@ -1,0 +1,38 @@
+.second-box{
+    background: black;
+    padding-bottom: 50px;
+        .address-container{
+            margin: $mobilBoxSize;
+                h2{
+                    color: #fff;
+                    font-size: 4em;
+                    line-height: 3em;
+                    text-transform: uppercase;
+
+                        span{
+                            color: $oranges;
+                        }
+                }
+                .address-info{
+                    
+
+                        p{
+                            color: #fff;
+                            font-size: 1.6em;
+                        }
+
+                        address{
+
+                        }
+
+                        .zipcode{
+
+                        }
+
+                        .city{
+                            line-height: 6em;
+                            margin-bottom: 80px;
+                        }
+                }
+        }
+}

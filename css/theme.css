@@ -7,6 +7,10 @@
   overflow-x: none;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  font-family: "Poppins", sans-serif;
+}
+
 .navbar {
   position: relative;
   background-color: black;
@@ -107,7 +111,7 @@
 
 .front-container .main_content {
   margin: auto;
-  margin: 50px 30px 50px 30px;
+  margin: 50px 60px 50px 60px;
 }
 .front-container .main_content .front-page-header {
   color: #333;
@@ -128,4 +132,38 @@
   font-family: "Poppins", sans-serif;
   font-size: 1.2em;
   margin-bottom: 20px;
+}
+
+.second-box {
+  background: black;
+  padding-bottom: 50px;
+}
+.second-box .address-container {
+  margin: 50px 60px 50px 60px;
+}
+.second-box .address-container h2 {
+  color: #fff;
+  font-size: 4em;
+  line-height: 3em;
+  text-transform: uppercase;
+}
+.second-box .address-container h2 span {
+  color: #FF752E;
+}
+.second-box .address-container .address-info p {
+  color: #fff;
+  font-size: 1.6em;
+}
+.second-box .address-container .address-info .city {
+  line-height: 6em;
+  margin-bottom: 80px;
+}
+
+.third-box .third-container {
+  height: 256px;
+  width: 100%;
+  background-color: #FF752E;
+}
+.third-box .third-container .border_text p {
+  color: #fff;
 }
