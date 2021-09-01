@@ -4,12 +4,34 @@
             height: 256px;
             width: 100%;
             background-color: $oranges;
+            position: relative;
 
-                .border_text{
-
-                        p{
-                            color: #fff;
+                p{
+                    color: #fff;
+                    font-size: 14px;
+                        span{
+                            margin-right: 15px;
+                            width: 100%;
                         }
+
                 }
+
+                .top{
+                    position: absolute;
+                    top: -11px;
+                    overflow: hidden;
+                    white-space: nowrap;
+
+                }
+
+                .bottom{
+                    position: absolute;
+                    bottom: -11px;
+                    overflow: hidden;
+                    white-space: nowrap;
+
+                }
+
+
         }
 }

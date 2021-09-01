@@ -163,7 +163,25 @@ h1, h2, h3, h4, h5, h6, p {
   height: 256px;
   width: 100%;
   background-color: #FF752E;
+  position: relative;
 }
-.third-box .third-container .border_text p {
+.third-box .third-container p {
   color: #fff;
+  font-size: 14px;
+}
+.third-box .third-container p span {
+  margin-right: 15px;
+  width: 100%;
+}
+.third-box .third-container .top {
+  position: absolute;
+  top: -11px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.third-box .third-container .bottom {
+  position: absolute;
+  bottom: -11px;
+  overflow: hidden;
+  white-space: nowrap;
 }
