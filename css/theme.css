@@ -4,7 +4,6 @@
 * {
   margin: 0;
   padding: 0;
-  overflow-x: none;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -165,23 +164,55 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: #FF752E;
   position: relative;
 }
+.third-box .third-container .border {
+  height: 20px;
+  width: 100%;
+  background-color: black;
+}
 .third-box .third-container p {
   color: #fff;
   font-size: 14px;
+  text-transform: uppercase;
 }
 .third-box .third-container p span {
   margin-right: 15px;
-  width: 100%;
 }
 .third-box .third-container .top {
   position: absolute;
   top: -11px;
-  overflow: hidden;
+  left: 30%;
+  transform: translateX(-50%);
   white-space: nowrap;
+  overflow: hidden;
 }
 .third-box .third-container .bottom {
   position: absolute;
   bottom: -11px;
-  overflow: hidden;
+  left: 40%;
+  transform: translateX(-50%);
   white-space: nowrap;
+  overflow: hidden;
+}
+.third-box .third-container .front-date {
+  position: absolute;
+  top: 40%;
+  left: 32%;
+  z-index: 10;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 6em;
+  font-weight: bold;
+  font-style: italic;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #fff;
+}
+.third-box .third-container .back-date {
+  position: absolute;
+  top: 60%;
+  left: 68%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 6em;
+  font-weight: bold;
+  font-style: italic;
+  color: #e9e8e8;
 }

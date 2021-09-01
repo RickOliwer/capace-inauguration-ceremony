@@ -130,40 +130,67 @@ if(!function_exists('capace_third_box')){
             return;
         }
 
+        function borderText(){
+            if( have_rows('border_text')){
 
+                while(have_rows('border_text')){
+                    the_row();
+    
+                    $top = get_sub_field('top');
+                    $bottom = get_sub_field('bottom');
+
+                    printf('
+                            <p class="top"><span>%s</span> <span>%s</span> <span>%s</span> <span>%s</span> <span>%s</span></p>
+                            <p class="bottom"><span>%s</span> <span>%s</span> <span>%s</span> <span>%s</span> <span>%s</span></p>',
+                            $top,
+                            $top,
+                            $top,
+                            $top,
+                            $top,
+                            $bottom,
+                            $bottom,
+                            $bottom,
+                            $bottom,
+                            $bottom,
+
+                    );
+                }
+            }
+        }
+
+        function dateText(){
+            if( have_rows('date')){
+
+                while(have_rows('date')){
+                    the_row();
+    
+                    $day = get_sub_field('day');
+                    $month = get_sub_field('month');
+
+                    printf('
+                            <p class="front-date">0%d/0%d</p>
+                            <p class="back-date">0%d/0%d</p>',
+                            $day,
+                            $month,
+                            $day,
+                            $month,
+
+
+                    );
+                }
+            }
+        }
 
         ?>
-        <div class="third-container">
-            <?php 
-                if( have_rows('border_text')){
-
-                    while(have_rows('border_text')){
-                        the_row();
         
-                        $top = get_sub_field('top');
-                        $bottom = get_sub_field('bottom');
+        <div class="third-container">
+   
+            <?php borderText(); ?>
 
-                        printf('
-                                <p class="top"><span>%s</span> <span>%s</span> <span>%s</span> <span>%s</span> <span>%s</span></p>
-                                <p class="bottom"><span>%s</span> <span>%s</span> <span>%s</span> <span>%s</span> <span>%s</span></p>',
-                                $top,
-                                $top,
-                                $top,
-                                $top,
-                                $top,
-                                $bottom,
-                                $bottom,
-                                $bottom,
-                                $bottom,
-                                $bottom,
+            <?php DateText(); ?>
 
-                        );
-                    }
-                }
-            ?>
 
         </div>
-
         <?php
     }
 }

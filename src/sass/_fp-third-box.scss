@@ -1,17 +1,25 @@
 .third-box{
-
+    
         .third-container{
             height: 256px;
             width: 100%;
             background-color: $oranges;
             position: relative;
 
+                .border{
+                    height: 20px;
+                    width: 100%;
+                    background-color: black;
+                }
+
                 p{
                     color: #fff;
                     font-size: 14px;
+                    text-transform: uppercase;
+                    
                         span{
                             margin-right: 15px;
-                            width: 100%;
+
                         }
 
                 }
@@ -19,17 +27,45 @@
                 .top{
                     position: absolute;
                     top: -11px;
-                    overflow: hidden;
+                    left: 30%;
+                    transform: translateX(-50%);
                     white-space: nowrap;
+                    overflow: hidden;
 
                 }
 
                 .bottom{
                     position: absolute;
                     bottom: -11px;
-                    overflow: hidden;
+                    left: 40%;
+                    transform: translateX(-50%);
                     white-space: nowrap;
+                    overflow: hidden;
 
+                }
+
+                .front-date{
+                    position: absolute;
+                    top: 40%;
+                    left: 32%;
+                    z-index: 10;                    transform: translateX(-50%) translateY(-50%);
+                    font-size: 6em;
+                    font-weight: bold;
+                    font-style: italic;
+                    -webkit-text-fill-color: transparent;
+                    -webkit-text-stroke-width: 3px;
+                    -webkit-text-stroke-color: #fff;
+                }
+
+                .back-date{
+                    position: absolute;
+                    top: 60%;
+                    left: 68%;
+                    transform: translateX(-50%) translateY(-50%);
+                    font-size: 6em;
+                    font-weight: bold;
+                    font-style: italic;
+                    color: #e9e8e8;
                 }
 
 
