@@ -1,6 +1,7 @@
 <?php
 
 require_once('inc/front-page-content.php');
+require_once('inc/front-page-form.php');
 require get_template_directory() . '/inc/acf-loader.php';
 
 /**

@@ -140,8 +140,8 @@ if(!function_exists('capace_third_box')){
                     $bottom = get_sub_field('bottom');
 
                     printf('
-                            <p class="top"><span>%s</span> <span>%s</span> <span>%s</span> <span>%s</span> <span>%s</span></p>
-                            <p class="bottom"><span>%s</span> <span>%s</span> <span>%s</span> <span>%s</span> <span>%s</span></p>',
+                            <div class="top"><span>%s</span> <span>%s</span> <span>%s</span> <span>%s</span> <span>%s</span></div>
+                            <div class="bottom"><span>%s</span> <span>%s</span> <span>%s</span> <span>%s</span> <span>%s</span></div>',
                             $top,
                             $top,
                             $top,

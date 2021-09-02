@@ -21,6 +21,10 @@
                 <div class="third-box">
                     <?php capace_third_box(); ?>
                 </div>
+
+                <div class="form-box">
+                    <?php capace_form(); ?>
+                </div>
             </div>
 
             <?php endwhile ; ?>

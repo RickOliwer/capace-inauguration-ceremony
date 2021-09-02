@@ -23,11 +23,7 @@
     
 </head>
 
-<body <?php body_class(); ?>>
-
-<div id="to-top"></div>
-
-<div id="page" class="site">
+<body <?php body_class(); ?> >
 
     <header id="masthead" class="site-header">
 
@@ -36,5 +32,5 @@
 
         ?>
 
-</header><!-- #masthead -->
+    </header><!-- #masthead -->
     

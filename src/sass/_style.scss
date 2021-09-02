@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
 }
+body{
+    overflow-x: hidden;
+}
 
-
-h1, h2, h3, h4, h5, h6, p{
+h1, h2, h3, h4, h5, h6, p, label{
     font-family: 'Poppins', sans-serif;
 }
 
 $oranges: #FF752E;
 
-$mobilBoxSize: 50px 60px 50px 60px;
+$mobilBoxSize: 50px 50px 50px 50px;
