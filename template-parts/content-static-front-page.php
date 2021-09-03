@@ -25,6 +25,10 @@
                 <div class="form-box">
                     <?php capace_form(); ?>
                 </div>
+
+                <div class="hero-module">
+                    <?php capace_fourth_module(); ?>
+                </div>
             </div>
 
             <?php endwhile ; ?>

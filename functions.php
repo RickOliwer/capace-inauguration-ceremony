@@ -2,6 +2,9 @@
 
 require_once('inc/front-page-content.php');
 require_once('inc/front-page-form.php');
+require_once('inc/front-page-fourth-module.php');
+
+
 require get_template_directory() . '/inc/acf-loader.php';
 
 /**
@@ -9,13 +12,13 @@ require get_template_directory() . '/inc/acf-loader.php';
  *
  * @return void
  */
-function cic_theme_setup(){
+function capace_theme_setup(){
     /**
      * declare support for costum logo.
      */
     add_theme_support('custom-logo');
 }
-add_action('after_setup_theme', 'cic_theme_setup');
+add_action('after_setup_theme', 'capace_theme_setup');
 
 /**
  * Enqueue scripts and styles.
@@ -37,3 +40,16 @@ function capace_scripts() {
 
 }
 add_action( 'wp_enqueue_scripts', 'capace_scripts' );
+
+function capace_widgets_init(){
+    register_sidebar([
+        'name' => 'Footer',
+        'id' => 'footer',
+        'description' => 'footer for Capace',
+        'before_widget' => '<div id="%1$s" class="%2$s footer-widget"',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ]);
+}
+add_action('widgets_init', 'capace_widgets_init');
