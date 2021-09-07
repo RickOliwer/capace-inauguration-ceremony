@@ -154,3 +154,48 @@
                 }
         }
 }
+
+
+@media screen and (min-width: 1000px){
+
+    .footer-container{
+
+            .footer-row{
+
+                flex-direction: row;
+                width: 50%;
+
+                    .footer-widget{
+                        
+                        
+                            p{
+                                font-size: 14px;
+                            }
+                    }
+                    
+            }
+
+            .footer-bottom-row{
+
+                    .footer-widget{
+                        width: unset;
+                        margin: 26px 0px;
+                            p{
+                                
+                            }
+                    }
+                    .widget_capace-social-widget{
+    
+                            .social-container{
+                                
+                                    .fab{
+                                        font-size: 26px !important;
+                                        margin-left: 36px;
+                                    }
+                            }
+                    }
+            }
+
+ 
+    }
+}

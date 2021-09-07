@@ -122,39 +122,33 @@
         }
 }
 
-// @media screen and (min-width: 600px){
-//     .third-box{
+@media screen and (min-width: 1000px){
+    .third-box{
     
-//         .third-container{
-//             height: 556px;
-//             width: 100%;
-//                 .border{
-//                     height: 20px;
-//                     width: 100%;
-//                 }
+        .third-container{
+            height: 656px;
 
-//                 .top, .bottom{
-//                     font-size: 1.8em;
-//                 }
+                .border{
+                    height: 20px;
+                    width: 100%;
+                }
 
-//                 div.top{
-//                     top: -20px;
-//                     left: 0%;
-//                 }
+                .top, .bottom{
 
-//                 div.bottom{
-//                     bottom: -20px;
-//                     left: 0%;
+                    span{
+                        margin-right: 102px !important;
 
-//                 }
+                    }
 
-//                 .front-date{
-//                     font-size: 12em;
-//                 }
+                }
 
-//                 .back-date{
-//                     font-size: 12em;
-//                 }
-//         }
-//     }
-// }
+                .front-date{
+                    font-size: 18em;
+                }
+
+                .back-date{
+                    font-size: 18em;
+                }
+        }
+    }
+}
