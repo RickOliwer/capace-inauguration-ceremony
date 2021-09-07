@@ -90,7 +90,7 @@ function capace_widgets_init(){
         'name' => 'Bottom Footer',
         'id' => 'bottom-footer',
         'description' => 'widget for Capace',
-        'before_widget' => '<div id="%1$s" class="%2$s footer-widget"',
+        'before_widget' => '<div id="%1$s" class="%2$s footer-widget">',
         'after_widget' => '</div>',
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>',

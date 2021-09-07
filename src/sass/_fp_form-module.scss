@@ -1,6 +1,6 @@
 
 .form-container{
-    
+    padding-bottom: 56px;
 
     .form-info{
         padding: $mobilBoxSize;
@@ -35,6 +35,7 @@
     .main-form{
         padding: $mobilBoxSize;
         box-sizing: border-box;
+        margin-bottom: 42px;
 
         .txt_field{
             position: relative;
@@ -162,6 +163,7 @@
     }
 
     .form-img-container{
+        
 
             .grid-container{
                 background-position: center;
@@ -271,6 +273,7 @@
                         grid-column: span 3;
                         grid-row: span 2;
                         border: 6px solid black;
+                        border-bottom: 8px solid black;
                     }
                     
                     .item13{

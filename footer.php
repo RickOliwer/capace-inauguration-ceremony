@@ -8,6 +8,15 @@
         <div class="footer-bottom-row">
             <?php dynamic_sidebar('bottom-footer'); ?>
         </div>
+        <div class="copy">
+            <div class="copy-left">
+                <a href="">&copy; 2021 - Capace Media Group AB</a>
+            </div>
+            <div class="copy-right">
+                <a href="">Cookies</a>
+                <a href="">Integritetspolicy</a>
+            </div>
+        </div>
     </div>
 </footer>
     <?php wp_footer(); ?>

@@ -10,14 +10,18 @@
 
 .footer-container{
     background-color: #000000;
+    height: 100%;
         .footer-row{
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             width: 90%;
             flex-direction: column;
+            margin: auto;
+            align-items: center;
                 .footer-widget{
                     width: 90%;
                     margin: 36px;
+
                     
 
                         h1, h2, h3, h5, h4, h6{
@@ -35,6 +39,68 @@
                             margin: auto;
 
 
+                        }
+                }
+        }
+
+        .footer-bottom-row{
+            display: flex;
+            width: 90%;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+            border-bottom: 3px solid #fff;
+            margin-bottom: 15px;
+                .footer-widget{
+                    width: 90%;
+                    margin: 36px;
+                    text-align: center;
+
+
+                        h1, h2, h3, h5, h4, h6{
+                            color: $oranges;
+                            font-size: 27px;
+                        }
+
+                        p{
+                            color: #fff;
+                            font-size: 14px;
+                        }
+
+                }
+                .widget_capace-social-widget{
+
+                        .social-container{
+                            
+                            display: flex;
+                            justify-content: space-between;
+                            margin: auto;
+                        }
+                }
+        }
+
+        .copy{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            align-items: center;
+            margin: auto;
+                .copy-left{
+
+                        a{
+                            text-decoration: none;
+                            color: #fff;
+                            margin: 10px;
+                        }
+                }
+                .copy-right{
+                    display: flex;
+                    justify-content: space-between;
+                        a{
+                            text-decoration: none;
+                            color: #fff;
+                            margin: 10px;
                         }
                 }
         }

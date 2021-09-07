@@ -1,6 +1,6 @@
 .second-box{
     background: black;
-    padding-bottom: 50px;
+    padding-bottom: 42px;
         .address-container{
             margin: $mobilBoxSize;
                 h2{
@@ -35,4 +35,20 @@
                         }
                 }
         }
+}
+
+@media screen and (min-width: 400px) {
+    .second-box{
+        display: flex;
+        padding-bottom: 0;
+
+        video{
+            width: 50%;
+        }
+        .address-container{
+            margin-top: 0px !important;
+            margin-bottom: 0px !important;
+        }
+    }
+
 }

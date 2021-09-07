@@ -23,120 +23,114 @@ class SocialWidget extends WP_Widget {
         
         echo $args['before_widget'];
 
-        ?>
+        // render title
+		if (!empty($instance['title'])) {
+			echo $args['before_title'] . $instance['title'] . $args['after_title'];
+        }
         
-            <div class="social-container"> 
+        if($instance['first_social'] == 'facebook'){
+            $output =  '<div class="first_social">' .
 
-            
-                <div class="first_social">
-
-                    <?php
-
-                    if($instance['first_social'] == 'default'){ ?>
-
-                        <a href="<?php echo $instance['first_url']; ?>"><?php echo $instance['first_url']; ?></a>
-
-                    <?php }
-
-                    if($instance['first_social'] == 'facebook'){ ?>
-                        <a href="<?php echo $instance['first_url']; ?>">
-                        
-                            <i class="fab fa-facebook-f" style="color: white; font-size: 60px;"></i>
-                        </a>
-                    <?php }
-
-                    if($instance['first_social'] == 'instagram'){ ?>
-
-                        <a href="<?php echo $instance['first_url']; ?>">
-                        
-                            <i class="fab fa-instagram" style="color: white; font-size: 60px;"></i>
-                        </a>
-                    <?php }
-
-                    if($instance['first_social'] == 'linkedin'){ ?>
-
-                        <a href="<?php echo $instance['first_url']; ?>">
-                        
-                            <i class="fab fa-linkedin-in" style="color: white; font-size: 60px;"></i>
-                        </a>
-                    <?php }
+                    '<a href="' . $instance['first_url'] .'">' .
                     
-                    ?>
-                </div>
+                        '<i class="fab fa-facebook-f" style="color: white; font-size: 60px;"></i>
+                    </a>
+                </div>';
+        }
 
-                <div class="second_social">
+        if($instance['first_social'] == 'instagram'){ 
+            $output =  '<div class="first_social">' .
 
-                    <?php
+                '<a href="' . $instance['first_url'] . '">
+                
+                    <i class="fab fa-instagram" style="color: white; font-size: 60px;"></i>
+                </a>
+            </div>';
+        }
 
-                    if($instance['second_social'] == 'default'){ ?>
+        if($instance['first_social'] == 'linkedin'){
+            $output =  '<div class="first_social">' .
 
-                        <a href="<?php echo $instance['second_url']; ?>"><?php echo $instance['second_url']; ?></a>
+                '<a href="' . $instance['first_url'] . '">
+                
+                    <i class="fab fa-linkedin-in" style="color: white; font-size: 60px;"></i>
+                </a>
+            </div>';
+        }
 
-                    <?php }
+        // second
 
-                    if($instance['second_social'] == 'facebook'){ ?>
-                        <a href="<?php echo $instance['second_url']; ?>">
-                        
-                            <i class="fab fa-facebook-f" style="color: white; font-size: 60px;"></i>
-                        </a>
-                    <?php }
+        if($instance['second_social'] == 'facebook'){
+            $second_output =  '<div class="second_social">' .
 
-                    if($instance['second_social'] == 'instagram'){ ?>
+                    '<a href="' . $instance['second_url'] .'">' .
+                    
+                        '<i class="fab fa-facebook-f" style="color: white; font-size: 60px;"></i>
+                    </a>
+                </div>';
+        }
 
-                        <a href="<?php echo $instance['second_url']; ?>">
-                        
-                            <i class="fab fa-instagram" style="color: white; font-size: 60px;"></i>
-                        </a>
-                    <?php }
+        if($instance['second_social'] == 'instagram'){ 
+            $second_output =  '<div class="second_social">' .
 
-                    if($instance['second_social'] == 'linkedin'){ ?>
+                '<a href="' . $instance['second_url'] . '">
+                
+                    <i class="fab fa-instagram" style="color: white; font-size: 60px;"></i>
+                </a>
+            </div>';
+        }
 
-                        <a href="<?php echo $instance['second_url']; ?>">
-                        
-                            <i class="fab fa-linkedin-in" style="color: white; font-size: 60px;"></i>
-                        </a>
-                    <?php }
+        if($instance['second_social'] == 'linkedin'){
+            $second_output =  '<div class="second_social">' .
 
-                    ?>
-                </div>
+                '<a href="' . $instance['second_url'] . '">
+                
+                    <i class="fab fa-linkedin-in" style="color: white; font-size: 60px;"></i>
+                </a>
+            </div>';
+        }
 
-                <div class="third_social">
+        //third
 
-                    <?php
+        if($instance['third_social'] == 'facebook'){
+            $third_output =  '<div class="third_social">' .
 
-                    if($instance['third_social'] == 'default'){ ?>
+                    '<a href="' . $instance['third_url'] .'">' .
+                    
+                        '<i class="fab fa-facebook-f" style="color: white; font-size: 60px;"></i>
+                    </a>
+                </div>';
+        }
 
-                        <a href="<?php echo $instance['third_url']; ?>"><?php echo $instance['third_url']; ?></a>
+        if($instance['third_social'] == 'instagram'){ 
+            $third_output =  '<div class="third_social">' .
 
-                    <?php }
+                '<a href="' . $instance['third_url'] . '">
+                
+                    <i class="fab fa-instagram" style="color: white; font-size: 60px;"></i>
+                </a>
+            </div>';
+        }
 
-                    if($instance['third_social'] == 'facebook'){ ?>
-                        <a href="<?php echo $instance['third_url']; ?>">
-                        
-                            <i class="fab fa-facebook-f" style="color: white; font-size: 60px;"></i>
-                        </a>
-                    <?php }
+        if($instance['third_social'] == 'linkedin'){
+            $third_output =  '<div class="third_social">' .
 
-                    if($instance['third_social'] == 'instagram'){ ?>
+                '<a href="' . $instance['third_url'] . '">
+                
+                    <i class="fab fa-linkedin-in" style="color: white; font-size: 60px;"></i>
+                </a>
+            </div>';
+        }
+        
 
-                        <a href="<?php echo $instance['third_url']; ?>">
-                        
-                            <i class="fab fa-instagram" style="color: white; font-size: 60px;"></i>
-                        </a>
-                    <?php }
+    
+        echo '<div class="social-container">';
+        echo $output;
+        echo $second_output;
+        echo $third_output;
+        echo '</div>';
 
-                    if($instance['third_social'] == 'linkedin'){ ?>
-
-                        <a href="<?php echo $instance['third_url']; ?>">
-                        
-                            <i class="fab fa-linkedin-in" style="color: white; font-size: 60px;"></i>
-                        </a>
-                    <?php }
-
-                    ?>
-                </div>
-            </div>
-        <?php
+    
         echo $args['after_widget'];
      }
 
@@ -148,8 +142,6 @@ class SocialWidget extends WP_Widget {
       * @return void
       */
      public function form($instance){
-         
-
         $first_social = ! empty( $instance['first_social']) ? $instance['first_social'] : '';
         $first_url = ! empty( $instance['first_url']) ? $instance['first_url'] : '';
         $second_social = ! empty( $instance['second_social']) ? $instance['second_social'] : '';
@@ -158,8 +150,6 @@ class SocialWidget extends WP_Widget {
         $third_url = ! empty( $instance['third_url']) ? $instance['third_url'] : '';
          
         ?>
-            <!-- Title -->
-        
             <p>
                 <label for="<?php echo $this->get_field_id('first_url'); ?>">First Url:</label>
 
@@ -180,8 +170,6 @@ class SocialWidget extends WP_Widget {
                 name="<?php echo esc_attr( $this->get_field_name('first_social')) ?>" 
                 id="<?php echo esc_attr( $this->get_field_id('first_social')) ?>"
                 >
-                    <option value="default" <?php echo ($first_social == 'default') ? 'selected' : ''; ?>>
-                    </option>
                     <option value="facebook" <?php echo ($first_social == 'facebook') ? 'selected' : ''; ?>>
                         Facebook
                     </option>
@@ -214,8 +202,6 @@ class SocialWidget extends WP_Widget {
                 name="<?php echo esc_attr( $this->get_field_name('second_social')) ?>" 
                 id="<?php echo esc_attr( $this->get_field_id('second_social')) ?>"
                 >
-                    <option value="default" <?php echo ($second_social == 'default') ? 'selected' : ''; ?>>
-                    </option>
                     <option value="facebook" <?php echo ($second_social == 'facebook') ? 'selected' : ''; ?>>
                         Facebook
                     </option>
@@ -248,8 +234,6 @@ class SocialWidget extends WP_Widget {
                 name="<?php echo esc_attr( $this->get_field_name('third_social')) ?>" 
                 id="<?php echo esc_attr( $this->get_field_id('third_social')) ?>"
                 >
-                    <option value="default" <?php echo ($third_social == 'default') ? 'selected' : ''; ?>>
-                    </option>
                     <option value="facebook" <?php echo ($third_social == 'facebook') ? 'selected' : ''; ?>>
                         Facebook
                     </option>
@@ -274,7 +258,6 @@ class SocialWidget extends WP_Widget {
       */
      public function update($new_instance, $old_instance){
         $instance = [];
-
         $instance['first_url'] = ( ! empty( $new_instance['first_url'])) ? strip_tags( $new_instance['first_url']) : '';
         $instance['first_social'] = ( ! empty( $new_instance['first_social'])) ? strip_tags( $new_instance['first_social']) : '';
 

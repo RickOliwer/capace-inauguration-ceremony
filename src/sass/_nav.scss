@@ -43,3 +43,24 @@
                 font-size: 1.5em;
             }
 }
+
+@media screen and (min-width: 400px) {
+
+        .navbar{
+            height: 60vh;
+                .front-container{
+                    
+                    .front-text{
+                        text-align: end;
+                        margin-right: 40px;
+
+                    }
+                    .front-first{
+         
+                        text-align: end;
+                        margin-right: 56px;
+                    }
+
+                }
+        }
+}

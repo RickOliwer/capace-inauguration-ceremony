@@ -7,11 +7,14 @@
 
 
             <div class="front-container">
-                <?php capace_first_box(); ?>
+                
+                <div class="first-module">
 
-                <div class="main_content">
-                    <?php capace_content_header(); ?>
-                    <?php the_content(); ?>
+                    <?php capace_first_box(); ?>
+                    <div class="main_content">
+                        <?php capace_content_header(); ?>
+                        <?php the_content(); ?>
+                    </div>
                 </div>
                 
                 <div class="second-box">
