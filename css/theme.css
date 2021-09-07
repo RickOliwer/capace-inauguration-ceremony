@@ -70,6 +70,23 @@ h1, h2, h3, h4, h5, h6, p, label {
     margin-right: 56px;
   }
 }
+@media screen and (min-width: 1000px) {
+  .navbar {
+    height: 90vh;
+  }
+  .navbar .front-container .front-text {
+    font-size: 14em;
+    line-height: 0.8em;
+    margin-right: 80px;
+  }
+  .navbar .front-container .front-first {
+    font-size: 3.5em;
+    margin-right: 96px;
+  }
+  .navbar .front-container .front-second {
+    font-size: 2em;
+  }
+}
 .img-frame {
   position: relative;
   width: 100%;
@@ -130,6 +147,29 @@ h1, h2, h3, h4, h5, h6, p, label {
     display: flex;
   }
 }
+@media screen and (min-width: 1000px) {
+  .first-module .img-frame {
+    width: 60%;
+    height: 700px;
+  }
+  .first-module .img-frame .img-frame-text h2 {
+    font-size: 12em;
+    line-height: 1em;
+  }
+  .first-module .img-frame .first-box-img {
+    width: 70%;
+    height: 70%;
+  }
+  .first-module .img-frame-lables {
+    bottom: 11%;
+  }
+  .first-module .img-frame-lables h3 {
+    font-size: 2em;
+  }
+  .first-module .main_content {
+    width: 40%;
+  }
+}
 .front-container .main_content {
   margin: auto;
   margin: 50px 50px 50px 50px;
@@ -169,6 +209,19 @@ h1, h2, h3, h4, h5, h6, p, label {
     margin-bottom: 20px;
   }
 }
+@media screen and (min-width: 1000px) {
+  .front-container .main_content .front-page-header {
+    font-size: 3em;
+    line-height: 1.5em;
+  }
+  .front-container .main_content .front-page-header span {
+    font-size: 1.4em;
+  }
+  .front-container .main_content p {
+    font-size: 1em;
+    line-height: 1em;
+  }
+}
 .second-box {
   background: #191919;
   padding-bottom: 42px;
@@ -205,6 +258,18 @@ h1, h2, h3, h4, h5, h6, p, label {
   .second-box .address-container {
     margin-top: 0px !important;
     margin-bottom: 0px !important;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .second-box {
+    width: 100%;
+  }
+  .second-box video {
+    width: 100%;
+  }
+  .second-box .address-container {
+    width: 50%;
+    padding: 62px;
   }
 }
 .third-box .third-container {

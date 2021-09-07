@@ -62,3 +62,42 @@
         display: flex;
     }
 }
+
+
+@media screen and (min-width: 1000px) {
+
+    .first-module{
+        
+            .img-frame{
+                width: 60%;
+                height: 700px;
+
+                    .img-frame-text{
+                
+                        h2{
+                            font-size: 12em;
+                            line-height: 1em;
+                        }
+                        .ce{
+
+                        }
+                    }
+
+                    .first-box-img{
+                        width: 70%;
+                        height: 70%;
+                    }
+
+                    
+            }
+            .img-frame-lables{
+                bottom: 11%;
+                    h3{
+                        font-size: 2em;
+                    }
+                }
+            .main_content{
+                width: 40%;
+            }
+    }
+}

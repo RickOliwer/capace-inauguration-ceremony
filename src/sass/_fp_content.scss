@@ -56,3 +56,31 @@
         }
     }
 }
+
+@media screen and (min-width: 1000px) {
+
+    .front-container{
+        .main_content{
+
+    
+            .front-page-header{
+
+                font-size: 3em;
+                line-height: 1.5em;
+        
+                span{
+                    font-size: 1.4em;
+                    
+                }
+                
+            }
+    
+            p{
+                font-size: 1em;
+                line-height: 1em;
+
+
+            }
+        }
+    }
+}
