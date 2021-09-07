@@ -326,8 +326,6 @@ h1, h2, h3, h4, h5, h6, p, label {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: #fff;
-  text-overflow: clip;
-  overflow: hidden;
 }
 .third-box .third-container .back-date {
   position: absolute;
@@ -338,8 +336,6 @@ h1, h2, h3, h4, h5, h6, p, label {
   font-weight: bold;
   font-style: italic;
   color: #e9e8e8;
-  text-overflow: clip;
-  overflow: hidden;
 }
 
 @media screen and (min-width: 600px) {
@@ -363,10 +359,27 @@ h1, h2, h3, h4, h5, h6, p, label {
     left: 0%;
   }
   .third-box .third-container .front-date {
-    font-size: 12em;
+    font-size: 11em;
+    left: -100%;
+    z-index: 10;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+    -webkit-text-stroke-width: 7px;
+    -webkit-text-stroke-color: #fff;
   }
   .third-box .third-container .back-date {
-    font-size: 12em;
+    font-size: 11em;
+    left: 200%;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+  }
+  .third-box .third-container .front-date-appear {
+    opacity: 1;
+    left: 32%;
+  }
+  .third-box .third-container .back-date-appear {
+    opacity: 1;
+    left: 68%;
   }
 }
 @media screen and (min-width: 1000px) {

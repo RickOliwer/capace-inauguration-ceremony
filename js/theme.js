@@ -1,13 +1,30 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/js/app.js":
-/*!***********************!*\
-  !*** ./src/js/app.js ***!
-  \***********************/
+/***/ "./src/js/date_animation.js":
+/*!**********************************!*\
+  !*** ./src/js/date_animation.js ***!
+  \**********************************/
 /***/ (() => {
 
+console.log('hello world');
 
+function scrollAnimation() {
+  var frontDate = document.querySelector('.front-date');
+  var backDate = document.querySelector('.back-date');
+  var position = document.querySelector('.third-container .bottom');
+  var screenPosition = window.innerHeight;
+  var interval = 100;
+  var frontDatePosition = position.getBoundingClientRect().top; //setTimeout(function () {
+
+  if (frontDatePosition < screenPosition) {
+    frontDate.classList.add('front-date-appear');
+    backDate.classList.add('back-date-appear');
+  } //},interval);
+
+}
+
+window.addEventListener('scroll', scrollAnimation);
 
 /***/ }),
 
@@ -161,7 +178,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/theme"], () => (__webpack_require__("./src/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/theme"], () => (__webpack_require__("./src/js/date_animation.js")))
 /******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/theme"], () => (__webpack_require__("./src/sass/theme.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	

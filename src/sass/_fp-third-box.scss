@@ -63,8 +63,8 @@
                     -webkit-text-fill-color: transparent;
                     -webkit-text-stroke-width: 3px;
                     -webkit-text-stroke-color: #fff;
-                    text-overflow: clip;
-                    overflow: hidden;
+                    //text-overflow: clip;
+                    //overflow: hidden;
 
                 }
 
@@ -77,8 +77,8 @@
                     font-weight: bold;
                     font-style: italic;
                     color: #e9e8e8;
-                    text-overflow: clip;
-                    overflow: hidden;
+                    //text-overflow: clip;
+                    //overflow: hidden;
                 }
 
 
@@ -112,11 +112,33 @@
                     }
 
                     .front-date{
-                        font-size: 12em;
+                        font-size: 11em;
+                        left: -100%;
+                        //left: 32%;
+                        z-index: 10;
+                        opacity: 0;
+                        transition: 1s all ease-in-out;
+                        -webkit-text-stroke-width: 7px;
+                        -webkit-text-stroke-color: #fff;
+                        
                     }
 
                     .back-date{
-                        font-size: 12em;
+                        font-size: 11em;
+                        left: 200%;
+                        //left: 68%;
+                        opacity: 0;
+                        transition: 1s all ease-in-out;
+    
+                    }
+                    .front-date-appear{
+                        opacity: 1;
+                        left: 32%;
+                    }
+
+                    .back-date-appear{
+                        opacity: 1;
+                        left: 68%;
                     }
             }
         }
