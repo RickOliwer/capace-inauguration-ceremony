@@ -10,7 +10,7 @@
                 .border{
                     height: 20px;
                     width: 100%;
-                    background-color: black;
+                    background-color: $black;
                 }
 
                 .top, .bottom{
@@ -85,7 +85,7 @@
         }
 }
 
-@media screen and (min-width: 400px){
+@media screen and (min-width: 600px){
         .third-box{
         
             .third-container{

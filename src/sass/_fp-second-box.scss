@@ -1,5 +1,5 @@
 .second-box{
-    background: black;
+    background: $black;
     padding-bottom: 42px;
         .address-container{
             margin: $mobilBoxSize;
@@ -37,7 +37,7 @@
         }
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 600px) {
     .second-box{
         display: flex;
         padding-bottom: 0;

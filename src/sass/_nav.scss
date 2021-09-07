@@ -1,6 +1,6 @@
 .navbar{
     position: relative;
-    background-color: black; 
+    background-color: $black; 
     height: 98vh;
     width: 100%;
             .logo{
@@ -44,7 +44,7 @@
             }
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 600px) {
 
         .navbar{
             height: 60vh;

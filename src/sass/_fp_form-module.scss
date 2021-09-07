@@ -1,6 +1,7 @@
 
 .form-container{
     padding-bottom: 56px;
+    background-color: $black !important;
 
     .form-info{
         padding: $mobilBoxSize;
@@ -188,123 +189,181 @@
                         font-family: 'Poppins', sans-serif;
                         font-weight: 800;
                         text-transform: uppercase;
+                        color: $black;
                     
                     }
                     
                     .item1{
-                        background: black;
+                        background: $black;
                         grid-column: span 2;
                         grid-row: span 1;
-                        border: 6px solid black;
+                        border: 6px solid $black;
                     }
                     
                     .item2{
-                        background: black;
+                        background: $black;
                         grid-column: span 2;
                         grid-row: span 3;
-                        border: 6px solid black;
+                        border: 6px solid $black;
                     }
                     
                     .item3{
                         background: transparnt;
                         grid-column: span 2;
                         grid-row: span 14;
-                        border: 6px solid black;
+                        border: 6px solid $black;
                     }
                     
                     .item4{
-                        background: black;
+                        background: $black;
                         grid-column: span 3;
                         grid-row: span 1;
-                        border: 6px solid black;
+                        border: 6px solid $black;
                     }
                     
                     .item5{
-                        background: black;
+                        background: $black;
                         grid-column: span 4;
                         grid-row: span 2;
-                        border: 6px solid black;
+                        border: 6px solid $black;
                     }
                     
                     .item6{
-                        background: black;
+                        background: $black;
                         grid-column: span 1;
                         grid-row: span 1;
-                        border: 6px solid black;
+                        border: 6px solid $black;
                     }
                     
                     .item7{
                         background: transparnt;
                         grid-column: span 2;
                         grid-row: span 11;
-                        border: 6px solid black;
+                        border: 6px solid $black;
                     }
                     
                     .item8{
                         background: transparnt;
                         grid-column: span 3;
                         grid-row: span 11;
-                        border: 6px solid black;
+                        border: 6px solid $black;
                     }
                     
                     .item9{
                         background: transparnt;
                         grid-column: span 4;
                         grid-row: span 11;
-                        border: 6px solid black;
+                        border: 6px solid $black;
                     }
                     
                     .item10{
                         background: transparnt;
                         grid-column: span 2;
                         grid-row: span 10;
-                        border: 6px solid black;
+                        border: 6px solid $black;
                     }
                     
                     .item11{
-                        background: black;
+                        background: $black;
                         grid-column: span 2;
                         grid-row: span 2;
-                        border: 6px solid black;
+                        border: 6px solid $black;
                     }
                     
                     .item12{
-                        background: black;
+                        background: $black;
                         grid-column: span 3;
                         grid-row: span 2;
-                        border: 6px solid black;
-                        border-bottom: 8px solid black;
+                        border: 6px solid $black;
+                        border-bottom: 8px solid $black;
                     }
                     
                     .item13{
-                        background: black;
+                        background: $black;
                         grid-column: span 2;
                         grid-row: span 1;
-                        border: 6px solid black;
+                        border: 6px solid $black;
                     }
                     
                     .item14{
-                        background: black;
+                        background: $black;
                         grid-column: span 4;
                         grid-row: span 1;
-                        border: 6px solid black;
+                        border: 6px solid $black;
                     }
                     
                     .item15{
                         background: transparnt;
                         grid-column: span 1;
                         grid-row: span 5;
-                        border: 6px solid black;
+                        border: 6px solid $black;
                     }
                     
                     .item16{
-                        background: black;
+                        background: $black;
                         grid-column: span 1;
                         grid-row: span 8;
-                        border: 6px solid black;
+                        border: 6px solid $black;
                     }
             }
         
     }
 } 
 
+@media screen and (min-width: 600px){
+    .form-container{
+
+            .form-info{
+                padding-bottom: 0px;
+
+                    .form-heading{
+                        font-size: 5em;
+                        line-height: 2em;
+                    }
+
+                    p{
+                        line-height: 1.6em;
+                    }
+        
+                    .excerpt{
+
+                        font-size: 22px;
+                    }
+        
+                    .paragraph{
+
+                        font-size: 14px;
+                        margin-bottom: 0px;
+                    }
+        
+                    .date_text{
+                        font-size: 14px;
+                    }
+        
+                    .day-and-month{
+                        font-size: 14px;
+
+                    }
+            }
+            .the__form{
+                display: flex; 
+                    
+                    .main-form{
+                        
+                    }
+                    .grid-container{
+                        width: 300px !important;
+                        height: 300px !important;
+                        margin-top: 50px;
+                        margin-right:  50px;
+
+                            h2{
+                                font-size: 6em;
+
+                            
+                            }
+                        
+                    }
+            }
+    }
+}

@@ -4,7 +4,7 @@
         margin: $mobilBoxSize;
 
         .front-page-header{
-            color: #333;
+            color: $black;
             font-family: 'Poppins', sans-serif;
             text-transform: lowercase;
             font-weight: bold;
@@ -22,7 +22,7 @@
         }
 
         p{
-            color: #333;
+            color: $black;
             font-family: 'Poppins', sans-serif;
             font-size: 1.2em;
             margin-bottom: 20px;
@@ -30,7 +30,7 @@
     }
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 600px) {
 
     .front-container{
         .main_content{

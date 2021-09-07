@@ -83,8 +83,11 @@ if(!function_exists('capace_form')){
 
         ?>
             <div class="form-container" style="background: black ;">
-                <?php formInfo(); ?>
+            
 
+            
+                <?php formInfo(); ?>
+                <div class="the__form">
                 <form class="main-form" method="post">
                     <div class="txt_field">
                         <input type="text" name="namn" value="" required>
@@ -124,9 +127,11 @@ if(!function_exists('capace_form')){
 
                     <input type="submit" name="rsvp" value="rsvp">
                 </form>
+                
                 <div class="form-img-container">
 
                     <?php formImg(); ?>
+                </div>
                 </div>
             </div>
         <?php

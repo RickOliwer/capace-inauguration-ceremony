@@ -9,7 +9,7 @@
 }
 
 .footer-container{
-    background-color: #000000;
+    background-color: $black;
     height: 100%;
         .footer-row{
             display: flex;
@@ -101,6 +101,55 @@
                             text-decoration: none;
                             color: #fff;
                             margin: 10px;
+                        }
+                }
+        }
+}
+
+@media screen and (min-width: 600px){
+
+        .footer-container{
+
+                .footer-bottom-row{
+                    display: flex;
+                    width: 90%;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                        .footer-widget{
+                            margin: 26px;
+                            
+                                p{
+                                    font-size: 12px;
+                                }
+                        }
+                        .widget_capace-social-widget{
+        
+                                .social-container{
+                                    
+                                        .fab{
+                                            font-size: 26px !important;
+                                        }
+                                }
+                        }
+                }
+
+                .copy{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                        .copy-left{
+        
+                                a{
+                                    font-size: 12px;
+                                }
+                        }
+                        .copy-right{
+                            display: flex;
+                            justify-content: space-between;
+                                a{
+                                    font-size: 12px;
+                                }
                         }
                 }
         }

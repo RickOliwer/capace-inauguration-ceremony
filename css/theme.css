@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6, p, label {
 
 .navbar {
   position: relative;
-  background-color: black;
+  background-color: #191919;
   height: 98vh;
   width: 100%;
 }
@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6, p, label {
   font-size: 1.5em;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 600px) {
   .navbar {
     height: 60vh;
   }
@@ -125,7 +125,7 @@ h1, h2, h3, h4, h5, h6, p, label {
   color: #fff;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 600px) {
   .first-module {
     display: flex;
   }
@@ -135,7 +135,7 @@ h1, h2, h3, h4, h5, h6, p, label {
   margin: 50px 50px 50px 50px;
 }
 .front-container .main_content .front-page-header {
-  color: #333;
+  color: #191919;
   font-family: "Poppins", sans-serif;
   text-transform: lowercase;
   font-weight: bold;
@@ -149,13 +149,13 @@ h1, h2, h3, h4, h5, h6, p, label {
   font-size: 1.8em;
 }
 .front-container .main_content p {
-  color: #333;
+  color: #191919;
   font-family: "Poppins", sans-serif;
   font-size: 1.2em;
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 600px) {
   .front-container .main_content .front-page-header {
     font-size: 1.4em;
     line-height: 1.5em;
@@ -170,7 +170,7 @@ h1, h2, h3, h4, h5, h6, p, label {
   }
 }
 .second-box {
-  background: black;
+  background: #191919;
   padding-bottom: 42px;
 }
 .second-box .address-container {
@@ -194,7 +194,7 @@ h1, h2, h3, h4, h5, h6, p, label {
   margin-bottom: 80px;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 600px) {
   .second-box {
     display: flex;
     padding-bottom: 0;
@@ -216,7 +216,7 @@ h1, h2, h3, h4, h5, h6, p, label {
 .third-box .third-container .border {
   height: 20px;
   width: 100%;
-  background-color: black;
+  background-color: #191919;
 }
 .third-box .third-container .top, .third-box .third-container .bottom {
   color: #fff;
@@ -277,7 +277,7 @@ h1, h2, h3, h4, h5, h6, p, label {
   overflow: hidden;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 600px) {
   .third-box .third-container {
     height: 556px;
     width: 100%;
@@ -306,6 +306,7 @@ h1, h2, h3, h4, h5, h6, p, label {
 }
 .form-container {
   padding-bottom: 56px;
+  background-color: #191919 !important;
 }
 .form-container .form-info {
   padding: 50px 50px 50px 50px;
@@ -461,105 +462,143 @@ h1, h2, h3, h4, h5, h6, p, label {
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
+  color: #191919;
 }
 .form-container .form-img-container .grid-container .item1 {
-  background: black;
+  background: #191919;
   grid-column: span 2;
   grid-row: span 1;
-  border: 6px solid black;
+  border: 6px solid #191919;
 }
 .form-container .form-img-container .grid-container .item2 {
-  background: black;
+  background: #191919;
   grid-column: span 2;
   grid-row: span 3;
-  border: 6px solid black;
+  border: 6px solid #191919;
 }
 .form-container .form-img-container .grid-container .item3 {
   background: transparnt;
   grid-column: span 2;
   grid-row: span 14;
-  border: 6px solid black;
+  border: 6px solid #191919;
 }
 .form-container .form-img-container .grid-container .item4 {
-  background: black;
+  background: #191919;
   grid-column: span 3;
   grid-row: span 1;
-  border: 6px solid black;
+  border: 6px solid #191919;
 }
 .form-container .form-img-container .grid-container .item5 {
-  background: black;
+  background: #191919;
   grid-column: span 4;
   grid-row: span 2;
-  border: 6px solid black;
+  border: 6px solid #191919;
 }
 .form-container .form-img-container .grid-container .item6 {
-  background: black;
+  background: #191919;
   grid-column: span 1;
   grid-row: span 1;
-  border: 6px solid black;
+  border: 6px solid #191919;
 }
 .form-container .form-img-container .grid-container .item7 {
   background: transparnt;
   grid-column: span 2;
   grid-row: span 11;
-  border: 6px solid black;
+  border: 6px solid #191919;
 }
 .form-container .form-img-container .grid-container .item8 {
   background: transparnt;
   grid-column: span 3;
   grid-row: span 11;
-  border: 6px solid black;
+  border: 6px solid #191919;
 }
 .form-container .form-img-container .grid-container .item9 {
   background: transparnt;
   grid-column: span 4;
   grid-row: span 11;
-  border: 6px solid black;
+  border: 6px solid #191919;
 }
 .form-container .form-img-container .grid-container .item10 {
   background: transparnt;
   grid-column: span 2;
   grid-row: span 10;
-  border: 6px solid black;
+  border: 6px solid #191919;
 }
 .form-container .form-img-container .grid-container .item11 {
-  background: black;
+  background: #191919;
   grid-column: span 2;
   grid-row: span 2;
-  border: 6px solid black;
+  border: 6px solid #191919;
 }
 .form-container .form-img-container .grid-container .item12 {
-  background: black;
+  background: #191919;
   grid-column: span 3;
   grid-row: span 2;
-  border: 6px solid black;
-  border-bottom: 8px solid black;
+  border: 6px solid #191919;
+  border-bottom: 8px solid #191919;
 }
 .form-container .form-img-container .grid-container .item13 {
-  background: black;
+  background: #191919;
   grid-column: span 2;
   grid-row: span 1;
-  border: 6px solid black;
+  border: 6px solid #191919;
 }
 .form-container .form-img-container .grid-container .item14 {
-  background: black;
+  background: #191919;
   grid-column: span 4;
   grid-row: span 1;
-  border: 6px solid black;
+  border: 6px solid #191919;
 }
 .form-container .form-img-container .grid-container .item15 {
   background: transparnt;
   grid-column: span 1;
   grid-row: span 5;
-  border: 6px solid black;
+  border: 6px solid #191919;
 }
 .form-container .form-img-container .grid-container .item16 {
-  background: black;
+  background: #191919;
   grid-column: span 1;
   grid-row: span 8;
-  border: 6px solid black;
+  border: 6px solid #191919;
 }
 
+@media screen and (min-width: 600px) {
+  .form-container .form-info {
+    padding-bottom: 0px;
+  }
+  .form-container .form-info .form-heading {
+    font-size: 5em;
+    line-height: 2em;
+  }
+  .form-container .form-info p {
+    line-height: 1.6em;
+  }
+  .form-container .form-info .excerpt {
+    font-size: 22px;
+  }
+  .form-container .form-info .paragraph {
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
+  .form-container .form-info .date_text {
+    font-size: 14px;
+  }
+  .form-container .form-info .day-and-month {
+    font-size: 14px;
+  }
+  .form-container .the__form {
+    display: flex;
+  }
+  .form-container .the__form .grid-container {
+    width: 300px !important;
+    height: 300px !important;
+    margin-top: 50px;
+    margin-right: 50px;
+  }
+  .form-container .the__form .grid-container h2 {
+    font-size: 6em;
+  }
+}
 .hero-module {
   margin-bottom: 100px;
 }
@@ -577,10 +616,20 @@ h1, h2, h3, h4, h5, h6, p, label {
   text-transform: uppercase;
   position: absolute;
   bottom: 0%;
+  color: #191919;
   padding: 15px;
   transform: scaleX(-1);
 }
 
+@media screen and (min-width: 600px) {
+  .hero-module .hero-image {
+    width: 100%;
+    height: 600px;
+  }
+  .hero-module .hero-image .hero-header {
+    font-size: 6em;
+  }
+}
 .footer-img {
   background-position: center top;
   background-size: cover;
@@ -592,7 +641,7 @@ h1, h2, h3, h4, h5, h6, p, label {
 }
 
 .footer-container {
-  background-color: #000000;
+  background-color: #191919;
   height: 100%;
 }
 .footer-container .footer-row {
@@ -667,4 +716,37 @@ h1, h2, h3, h4, h5, h6, p, label {
   text-decoration: none;
   color: #fff;
   margin: 10px;
+}
+
+@media screen and (min-width: 600px) {
+  .footer-container .footer-bottom-row {
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer-container .footer-bottom-row .footer-widget {
+    margin: 26px;
+  }
+  .footer-container .footer-bottom-row .footer-widget p {
+    font-size: 12px;
+  }
+  .footer-container .footer-bottom-row .widget_capace-social-widget .social-container .fab {
+    font-size: 26px !important;
+  }
+  .footer-container .copy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer-container .copy .copy-left a {
+    font-size: 12px;
+  }
+  .footer-container .copy .copy-right {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-container .copy .copy-right a {
+    font-size: 12px;
+  }
 }
