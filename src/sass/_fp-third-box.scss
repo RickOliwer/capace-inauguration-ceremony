@@ -34,7 +34,9 @@
                     z-index: 20;
                     text-overflow: clip;
                     overflow: hidden;
-                    //animation: animate 15s linear infinite;
+                        span{
+                            font-family: 'Poppins', sans-serif;
+                        }
                 }
 
                 div.bottom{
@@ -44,8 +46,9 @@
                     white-space: nowrap;
                     text-overflow: clip;
                     overflow: hidden;
-                    //animation: animateTwo 15s linear infinite;
-
+                        span{
+                            font-family: 'Poppins', sans-serif;
+                        }
                 }
 
                 .front-date{
@@ -82,26 +85,39 @@
         }
 }
 
-@keyframes animate {
-    0%{
-        transform: translateX(-50%) ;
-
-    }
-
-    100%{
-        transform: translateX(-20%);
+@media screen and (min-width: 400px){
+        .third-box{
         
-    }
-}
+            .third-container{
+                height: 556px;
+                width: 100%;
+                    .border{
+                        height: 20px;
+                        width: 100%;
+                    }
 
-@keyframes animateTwo {
-    0%{
-        transform: translateX(-20%) ;
+                    .top, .bottom{
+                        font-size: 1.8em;
+                    }
 
-    }
+                    div.top{
+                        top: -20px;
+                        left: 0%;
+                    }
 
-    100%{
-        transform: translateX(-50%);
-        
-    }
+                    div.bottom{
+                        bottom: -20px;
+                        left: 0%;
+
+                    }
+
+                    .front-date{
+                        font-size: 12em;
+                    }
+
+                    .back-date{
+                        font-size: 12em;
+                    }
+            }
+        }
 }

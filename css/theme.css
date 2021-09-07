@@ -235,6 +235,9 @@ h1, h2, h3, h4, h5, h6, p, label {
   text-overflow: clip;
   overflow: hidden;
 }
+.third-box .third-container div.top span {
+  font-family: "Poppins", sans-serif;
+}
 .third-box .third-container div.bottom {
   position: absolute;
   bottom: -9px;
@@ -242,6 +245,9 @@ h1, h2, h3, h4, h5, h6, p, label {
   white-space: nowrap;
   text-overflow: clip;
   overflow: hidden;
+}
+.third-box .third-container div.bottom span {
+  font-family: "Poppins", sans-serif;
 }
 .third-box .third-container .front-date {
   position: absolute;
@@ -271,37 +277,31 @@ h1, h2, h3, h4, h5, h6, p, label {
   overflow: hidden;
 }
 
-@-webkit-keyframes animate {
-  0% {
-    transform: translateX(-50%);
+@media screen and (min-width: 400px) {
+  .third-box .third-container {
+    height: 556px;
+    width: 100%;
   }
-  100% {
-    transform: translateX(-20%);
+  .third-box .third-container .border {
+    height: 20px;
+    width: 100%;
   }
-}
-
-@keyframes animate {
-  0% {
-    transform: translateX(-50%);
+  .third-box .third-container .top, .third-box .third-container .bottom {
+    font-size: 1.8em;
   }
-  100% {
-    transform: translateX(-20%);
+  .third-box .third-container div.top {
+    top: -20px;
+    left: 0%;
   }
-}
-@-webkit-keyframes animateTwo {
-  0% {
-    transform: translateX(-20%);
+  .third-box .third-container div.bottom {
+    bottom: -20px;
+    left: 0%;
   }
-  100% {
-    transform: translateX(-50%);
+  .third-box .third-container .front-date {
+    font-size: 12em;
   }
-}
-@keyframes animateTwo {
-  0% {
-    transform: translateX(-20%);
-  }
-  100% {
-    transform: translateX(-50%);
+  .third-box .third-container .back-date {
+    font-size: 12em;
   }
 }
 .form-container {
